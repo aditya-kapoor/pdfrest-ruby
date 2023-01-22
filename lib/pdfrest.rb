@@ -2,6 +2,7 @@
 
 require_relative "pdfrest/version"
 require_relative "pdfrest/config"
+require_relative "pdfrest/base"
 
 module Pdfrest
   class Error < StandardError; end
