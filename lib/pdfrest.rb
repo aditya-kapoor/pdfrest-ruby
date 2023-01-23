@@ -9,6 +9,10 @@ module Pdfrest
   class << self
     attr_accessor :configuration
 
+    def base_url
+      'https://api.pdfrest.com'.freeze
+    end
+
     def config
       self.configuration ||= Config.new
       yield(configuration)
